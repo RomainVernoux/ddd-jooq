@@ -3,7 +3,7 @@ package fr.vernoux.dddjooq.infrastructure;
 import fr.vernoux.dddjooq.domain.Backlog;
 import fr.vernoux.dddjooq.domain.BacklogRepository;
 import fr.vernoux.dddjooq.domain.UserStory;
-import fr.vernoux.dddjooq.infrastructure.types.tables.records.UserStoryRecord;
+import fr.vernoux.dddjooq.infrastructure.jooq.tables.records.UserStoryRecord;
 import org.apache.commons.lang3.reflect.FieldUtils;
 import org.jooq.DSLContext;
 import org.springframework.stereotype.Repository;
@@ -11,9 +11,9 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.UUID;
 
-import static fr.vernoux.dddjooq.infrastructure.types.Keys.UNIQ_BACKLOG_ID_NAME;
-import static fr.vernoux.dddjooq.infrastructure.types.tables.Backlog.BACKLOG;
-import static fr.vernoux.dddjooq.infrastructure.types.tables.UserStory.USER_STORY;
+import static fr.vernoux.dddjooq.infrastructure.jooq.Keys.UNIQ_BACKLOG_ID_NAME;
+import static fr.vernoux.dddjooq.infrastructure.jooq.tables.Backlog.BACKLOG;
+import static fr.vernoux.dddjooq.infrastructure.jooq.tables.UserStory.USER_STORY;
 import static org.jooq.impl.DSL.multiset;
 import static org.jooq.impl.DSL.select;
 

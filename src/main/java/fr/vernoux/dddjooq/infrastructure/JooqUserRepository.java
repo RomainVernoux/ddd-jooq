@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.UUID;
 
-import static fr.vernoux.dddjooq.infrastructure.types.tables.User.USER;
+import static fr.vernoux.dddjooq.infrastructure.jooq.tables.User.USER;
 
 @Repository
 public class JooqUserRepository implements UserRepository {
